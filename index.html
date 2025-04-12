@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reader-Writer Simulation</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Reader Preference</h2>
+        <div class="title-bar">
+            <div class="indicator">
+                <span class="reader-count" id="readerCount1">Readers: 0</span>
+            </div>
+            <div class="indicator">
+                <span class="writer-active" id="writerActive1">Writer: None</span>
+            </div>
+        </div>
+        <div class="button-group">
+            <button class="reader-btn" onclick="addReader(1)">Add Reader</button>
+            <button class="writer-btn" onclick="addWriter(1)">Add Writer</button>
+            <button class="finish-reader-btn" onclick="finishReader(1)">Finish Reader</button>
+            <button class="finish-writer-btn" onclick="finishWriter(1)">Finish Writer</button>
+        </div>
+        <div class="log" id="log1"></div>
+    </div>
+
+    <div class="container">
+        <h2>Writer Preference</h2>
+        <div class="title-bar">
+            <div class="indicator">
+                <span class="reader-count" id="readerCount2">Readers: 0</span>
+            </div>
+            <div class="indicator">
+                <span class="writer-active" id="writerActive2">Writer: None</span>
+            </div>
+        </div>
+        <div class="button-group">
+            <button class="reader-btn" onclick="addReader(2)">Add Reader</button>
+            <button class="writer-btn" onclick="addWriter(2)">Add Writer</button>
+            <button class="finish-reader-btn" onclick="finishReader(2)">Finish Reader</button>
+            <button class="finish-writer-btn" onclick="finishWriter(2)">Finish Writer</button>
+        </div>
+        <div class="log" id="log2"></div>
+    </div>
+
+</body>
+</html>
